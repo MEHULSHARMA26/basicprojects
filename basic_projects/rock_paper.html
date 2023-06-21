@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ROCK PAPER GAME</title>
+</head>
+<body>
+    <p>Rock Paper Scissors</p>
+    
+    <button onclick="
+    const random_number=Math.random();
+   //0 is for rock 1 is for paper anything between is for scissors as Math.random gives random value between 0-1. 
+    if(random_number>= 0 && random_number<= (1/3))
+    {
+        alert(`You picked rock.Computer picked rock.it's a tie`);
+    }
+    else if(random_number>=(1/3) && random_number<=(2/3))
+    {
+        alert(`You picked rock.Computer picked Paper.You loss `);
+    }
+    else if(random_number>=(2/3) && random_number<=1)
+        alert(`You picked rock.Computer picked scissors.You win`);
+    ">
+    Rock
+    </button>
+    
+    
+    <button onclick="
+    random_number=Math.random();
+   
+    if(random_number>= 0 && random_number<= (1/3))//rock
+    {
+        alert(`You picked paper.Computer picked rock.You win `);
+    }
+    else if(random_number>=(1/3) && random_number<=(2/3))//paper
+    {
+        alert(`You picked paper.Computer picked paper.it's a tie`);
+    }
+    else if(random_number>=(2/3) && random_number<=1)//scissors
+        alert(`You picked paper.Computer picked scissors.You lose`);
+    ">Paper</button>
+    
+    
+    <button onclick="
+    random_number=Math.random();
+   
+    if(random_number>= 0 && random_number<= (1/3))//rock
+    {
+        alert(`You picked scissors.Computer picked rock .You lose`);
+    }
+    else if(random_number>=(1/3) && random_number<=(2/3))//paper
+    {
+        alert(`You picked scissors.Computer picked paper .You win`);
+    }
+    else if(random_number>=(2/3) && random_number<=1)//scissors
+        alert(`You picked scissors.Computer picked scissors .it's a tie`);
+    ">Scissors</button>
+
+    
+</body>
+</html>
+<!--buttons are inline block elements whereas paragraph is block element-->

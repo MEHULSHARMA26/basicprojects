@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>VARIABLE CART</title>
+    <style>
+        button{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Cart quantity</p>
+    <!--onclick is attribute associated with the mouse clicking on that button
+    ALSO we can write some javascript code inside the double quotes-->
+
+        <button  onclick="console.log(`Cart Quantity: ${cartQ}`); ">
+        Show quantity
+        </button>
+        
+        <button onclick="cartQ++;
+        console.log(`Cart Quantity: ${cartQ}`);">Add to Cart
+        
+        </button>
+       
+       
+        <button onclick="cartQ+=2;
+        console.log(`Cart Quantity: ${cartQ}`);">
+        +2
+        </button>
+
+        <button  onclick="cartQ+=3;
+        console.log(`Cart Quantity: ${cartQ}`);">
+            +3
+        </button>
+
+        <button  onclick="cartQ=0;
+        console.log(`Cart was Reset.`);
+        console.log(`Cart Quantity: ${cartQ}`);">
+            Reset Cart
+        </button>
+        
+
+
+
+        <script>
+            let cartQ =0;//the naming convention in javascript follows camel case that is first alphabet of first word small and capital for following word
+            //for example let cartQuantity c is small whereas Q is captial
+           
+        </script>
+    
+</body>
+</html>
