@@ -1,0 +1,126 @@
+ *{
+    box-sizing: border-box;
+ }
+ body{
+    background-color:rgb(127, 0, 225) ;
+    color: white;
+    font-family: "Dosis",sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+ }
+ h1{
+    font-size: 40px;
+ }
+ .game-box{
+    padding: 20px 30px;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    width: 450px;
+ }
+ .stick-container{
+    fill: transparent;
+    stroke: white;
+    stroke-width: 4px;
+    stroke-linecap: round;
+    height: 250px;
+    width: 200px;
+ }
+ .wrong-letters-container{
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   display: flex;
+   flex-direction: column;
+   text-align: right;
+ }
+
+ .guess-word{
+    display: flex;
+    
+ }
+
+ .the_stick{
+    display: none;
+ }
+ .guess-word{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+ .alphabet{
+    border-bottom: 3px solid yellow;
+    display: inline-flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 3px;
+    height: 50px;
+    width: 50px;
+ }
+ .pop-up_container{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+   
+ }
+
+ .popup{
+    background-color:aqua ;
+    color: rgb(127, 0, 225);
+    text-align: center;
+    border-radius: 2px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+ }
+ .popup button{
+    
+    background-color:rgba(127, 0, 225);
+    color: aqua;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+
+    margin-bottom: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+
+ }
+ .popup button:not(hover){
+    transition: 0.3s;
+ }
+ .popup button:hover{
+    box-shadow: 10px 6px 20 px rgb(0, 0, 0);
+    transition: 0.3s;
+ }
+ .popup button:active{
+    transform: scale(0.96);
+ }
+
+ .message-container{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px 10px 0 0;
+    padding: 15px 20px;
+    position: absolute;
+    bottom: -50px;
+    transition: transform 0.3s ease-in-out;
+}
+.message-container p{
+    margin: 0 ;
+}
+.message-container.show {
+    transform: translate(-50px);
+}

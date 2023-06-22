@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="game.css">
+
+    <title>HANGMAN GAME</title>
+   
+</head>
+<body>
+    <h1>HANGMAN GAME</h1>
+    <p>Find the hidden word - Enter a letter.</p>
+    <div class="game-box">
+       
+        <svg height="250px" width="200px" class="stick-container">
+            <line x1="60" y1="20" x2="140" y2="20"/> <!--x1,y1 defines starting point coordinates and x2,y2 define the ending point coordinates of line/stroke-->
+            <line x1="140" y1="20" x2="140" y2="50"/> 
+            <line x1="60" y1="20" x2="60" y2="230"/> 
+            <line x1="20" y1="230" x2="100" y2="230"/> 
+        
+            <!--head-->
+            <circle class="the_stick" cx="140" cy="75" r="25" />
+            <!--body-->
+            <line class="the_stick" x1="140" y1="100" x2="140" y2="180"/>
+            <!--arms--> 
+            <line class="the_stick" x1="140" y1="120" x2="100" y2="110"/>
+            <line class="the_stick" x1="140" y1="120" x2="180" y2="110"/>
+            <!--legs-->
+            <line class="the_stick" x1="140" y1="180" x2="120" y2="200"/>
+            <line class="the_stick" x1="140" y1="180" x2="160" y2="200"/>
+        
+        </svg>
+
+        <div class="wrong-letters-container">
+
+            <div id="wrong-letters">
+                <p>wrong</p>
+            </div>
+
+        </div>
+
+        <div class="guess-word" id="word">
+
+            <div class="alphabet">  </div>
+            <div class="alphabet">  </div>
+            <div class="alphabet">  </div>
+            <div class="alphabet">  </div>
+            <div class="alphabet">  </div>  
+
+
+        </div>
+    <!--pop up final message conatiner --> 
+
+    <div class="pop-up_container" id="pop-up-container">
+
+        <div class="popup">
+            <h2 id="final-message">
+                YOU HAVE WON!
+            </h2>
+
+            <button class="play-button" id="playagain">
+                Play again!
+            </button>
+
+        </div>
+    </div>
+        
+           
+    
+    </div>
+     <!--message-->
+     <div class="message-container show" id="message-here" show>
+        <p>You have already entered this letter</p>
+    </div>
+        <script src="logic.js"></script>
+
+</body>
+</html>
