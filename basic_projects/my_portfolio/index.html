@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mehul Sharma Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&family=Poppins:ital,wght@0,300;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #463280;
+        color: white;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        background-color: #33265b;
+      }
+      .left {
+        font-size: 21px;
+        font-weight: bold;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style-type: none;
+        margin: 0 12px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        transition: 0.2s;
+      }
+      nav ul li a:hover {
+        font-size: 105%;
+        color: peru;
+      }
+      main hr {
+        border: 0;
+        background-color: peru;
+        height: 1.8px;
+        margin: 84px 38px;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: small;
+        margin: 43px 0px;
+      }
+
+      .leftsection {
+        font-size: 2.7em;
+      }
+      .leftsection .btn {
+        padding: 4px;
+        color: whitesmoke;
+        background: peru;
+        margin-right:9px ;
+        border: none;
+        border-radius: 3px;
+        font-size: 16px;
+        font-weight: 700;
+        font-style: normal;
+        cursor: pointer;
+        transition: .5s;
+        
+      }
+      .leftsection .btn:hover {
+        box-shadow: 8px 8px 13px rgb(157, 155, 153);
+        
+      }
+      
+      .leftsection .btn:active {
+        color: red;
+        transition: none;
+      }
+      
+      
+      .leftsection .profilepic {
+        height: 163px;
+        width: 173px;
+        position: relative;
+
+        opacity: 0.9;
+        object-fit: cover;
+      }
+      .rightsection {
+        width: 30%;
+      }
+      .rightsectionimage {
+        width: 90%;
+        margin: 50px 0;
+      }
+      .name {
+        color: rgb(234, 151, 68);
+        font-weight: bold;
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: #e8913a;
+      }
+      .secondsection {
+        max-width: 80vw;
+        margin: auto;
+
+        height: 90vh;
+      }
+      .secondsection h1 {
+        font-size: 30px;
+        font-weight: 700;
+      }
+      .secondsection .box {
+        background-color: white;
+        width: 64vw;
+        display: flex;
+        height: 2px;
+        margin-top: 56px;
+        margin-left: 40px;
+        margin-right: 70px;
+      }
+      .secondsection .vertical {
+        height: u93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 93px;
+      }
+      .timeline-image {
+        height: 23px;
+        position: relative;
+        top: -36px;
+        left: -11px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 80px;
+        width: 150px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 110px;
+        color: rgb(158, 154, 154);
+        font-size: 11px;
+        width: 170px;
+      }
+      footer {
+        background-color: #33265b;
+      }
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer > div {
+        width: 203px;
+      }
+      footer .footer-rights {
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">MEHUL'S PORTFOLIO</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact-Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          <div><img class="profilepic" src="/jaipur.jpg" alt="" /></div>
+          Hi, My name is <span class="name">Mehul</span>
+
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+         <button onclick="openpdf()" class="btn" >Download Resume</button>
+            <button onclick="github()" target="_blank" class="btn">visit Github</button>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img class="rightsectionimage" src="/devleoper.png" alt="" />
+        </div>
+      </section>
+      <hr />
+
+      <section class="secondsection">
+        <span class="text-gray">What I have learned so far</span>
+        <h1>Past Learning</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img class="timeline-image" src="/html_logo.jpeg" alt="" />
+            <div class="vertical-title">Learned HTML (may 2023)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus molestiae velit corporis voluptas architecto nisi
+              magnam laboriosam modi. Quidem sit laboriosam laborum voluptas!
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="timeline-image" src="/cssicon.png" alt="" />
+            <div class="vertical-title">Learned CSS (may 2023)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus molestiae velit corporis voluptas architecto nisi
+              magnam laboriosam modi. Quidem sit laboriosam laborum voluptas!
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="timeline-image" src="/jsicon.png" alt="" />
+            <div class="vertical-title">Learned JAVASCRIPT (may 2023)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus molestiae velit corporis voluptas architecto nisi
+              magnam laboriosam modi. Quidem sit laboriosam laborum voluptas!
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="timeline-image" src="/html_logo.jpeg" alt="" />
+            <div class="vertical-title">Learned HTML (may 2023)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus molestiae velit corporis voluptas architecto nisi
+              magnam laboriosam modi. Quidem sit laboriosam laborum voluptas!
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="timeline-image" src="/html_logo.jpeg" alt="" />
+            <div class="vertical-title">Learned HTML (may 2023)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus molestiae velit corporis voluptas architecto nisi
+              magnam laboriosam modi. Quidem sit laboriosam laborum voluptas!
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="firstfooter">
+          <h3>Mehul's Developer portfolio</h3>
+        </div>
+        <div class="secondfooter">
+          <ul>
+            <li>Home</li>
+            <li>about</li>
+            <li>contact</li>
+            <li>Services</li>
+          </ul>
+        </div>
+        <div class="thirdfooter">
+          <ul>
+            <li>Home</li>
+            <li>about</li>
+            <li>contact</li>
+            <li>Services</li>
+          </ul>
+        </div>
+        <div class="fourthfooter">
+          <ul>
+            <li>Home</li>
+            <li>about</li>
+            <li>contact</li>
+            <li>Services</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-rights">
+        Copyright &#169;mehulsportfolio.com | All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      function openpdf(){
+        window.open("MEHUL RESUME.PDF", "_blank");
+      }
+      function github(){
+        window.open("https://github.com/MEHULSHARMA26","_blank");
+      }
+      var typed = new Typed("#element", {
+        strings: [
+          "<i>Student</i>.",
+          "<i>Web Developer.</i>",
+          "<i>Learner.</i>",
+          "<i>IT enthusiast.</i>",
+        ],
+        typeSpeed: 76,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
