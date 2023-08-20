@@ -9,11 +9,11 @@
     <button onclick="
     const random_number=Math.random();
    //0 is for rock 1 is for paper anything between is for scissors as Math.random gives random value between 0-1. 
-    if(random_number>= 0 && random_number<= (1/3))
+    if(random_number>= 0 && random_number< (1/3))
     {
         alert(`You picked rock.Computer picked rock.it's a tie`);
     }
-    else if(random_number>=(1/3) && random_number<=(2/3))
+    else if(random_number>=(1/3) && random_number<(2/3))
     {
         alert(`You picked rock.Computer picked Paper.You loss `);
     }
@@ -27,11 +27,11 @@
     <button onclick="
     random_number=Math.random();
    
-    if(random_number>= 0 && random_number<= (1/3))//rock
+    if(random_number>= 0 && random_number< (1/3))//rock
     {
         alert(`You picked paper.Computer picked rock.You win `);
     }
-    else if(random_number>=(1/3) && random_number<=(2/3))//paper
+    else if(random_number>=(1/3) && random_number<(2/3))//paper
     {
         alert(`You picked paper.Computer picked paper.it's a tie`);
     }
@@ -43,11 +43,11 @@
     <button onclick="
     random_number=Math.random();
    
-    if(random_number>= 0 && random_number<= (1/3))//rock
+    if(random_number>= 0 && random_number< (1/3))//rock
     {
         alert(`You picked scissors.Computer picked rock .You lose`);
     }
-    else if(random_number>=(1/3) && random_number<=(2/3))//paper
+    else if(random_number>=(1/3) && random_number<(2/3))//paper
     {
         alert(`You picked scissors.Computer picked paper .You win`);
     }
