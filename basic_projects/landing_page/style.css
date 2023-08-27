@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/*above is boilerplate of css*/
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #D0D4D5 ;
+    position: relative;
+    /*Download COLORZILA EXTENSION */
+}
+#nav{
+    height: 110px;
+    padding: 0 55px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav img{
+    height: 37px;
+    margin-right: 170px;
+}
+#nav_prt1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#nav_prt1 h4{
+    margin-right: 90px;
+    font-size: 21px;
+    font-weight: 600;
+}
+#nav_prt2 i {
+    margin-right: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+#content{
+    width: 100%;
+    height: calc(100% - 110px);
+    position: relative;
+    display: flex;
+    
+}
+#left{
+    width: 35%;
+    height: 100%;
+    padding: 120px 110px;
+    
+ 
+}
+#left h5{
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: #535353;
+}
+#left h1{
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    line-height: 100%;
+    font-family: poppins;
+    font-size: 40px; 
+    font-weight: 600;
+}
+#left p{
+    font-size: 16px;
+    margin-bottom: 50px;
+    width: 80%;
+}
+#left button{
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 14px 45px;
+   
+    border-radius: 35px;
+    border-top-left-radius: 0px;
+}
+#right{
+    width: 65%;
+    height:100%;
+    position: relative;
+    padding: 40px ;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+#right::-webkit-scrollbar{
+    display: none;
+}
+.elem{
+    margin: 50px 10px;
+    padding-right: 350px;
+    height: 480px;
+    border-radius: 6px;
+    width: 290px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: .8s;
+    display: inline-block;
+    
+}
+.elem:hover{
+    height: 490px;
+    width: 400px;
+    transition: .8s;
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    
+    object-fit: contain;
+    position: absolute;
+}
+.elem h4{
+    position: absolute;
+    
+    bottom: 0;
+    right: 0;
+    background-color: #D0D4D5;
+    padding: 15px 33px;
+    border-radius: 6px;
+    color: black;
+}
+.elem h5{
+    position: absolute;
+    font-family: poppins;
+    font-weight: bolder;
+    bottom: 10%;
+    right: 0;
+    background-color: black;
+    padding: 15px 33px;
+    border-radius: 6px;
+    color: white;
+}
+
